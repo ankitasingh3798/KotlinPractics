@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#e5e7e9"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:id="@+id/txtsec"
+        android:layout_marginTop="20dp"
+        android:text="@string/security"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/pink_card"
+        android:layout_below="@+id/txtsec"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#f07375"
+        android:layout_margin="@dimen/dimens_16dp"
+        app:cardCornerRadius="16dp"
+        android:layout_height="180dp">
+
+        <RelativeLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtsos"
+                android:textStyle="bold"
+                android:text="SOS"
+                android:layout_margin="16dp"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_toLeftOf="@+id/imgsos"
+                android:layout_below="@+id/txtsos"
+                android:textColor="@color/white"
+                android:id="@+id/sosmsg"
+                android:layout_margin="10dp"
+                android:text="In case of emergency, keep telling family memeber to contact me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgsos"
+                android:src="@drawable/ic_sos"
+                android:layout_alignParentRight="true"
+                android:layout_width="96dp"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/green_card"
+        android:layout_below="@+id/pink_card"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#63d2c8"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        android:layout_height="180dp">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtguard"
+                android:textStyle="bold"
+                android:text="GUARD"
+                android:layout_margin="16dp"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_below="@+id/txtguard"
+                android:textColor="@color/white"
+                android:id="@+id/gurdmsg"
+                android:layout_margin="10dp"
+                android:text="In case of emergency, keep telling family memeber to contact me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>
